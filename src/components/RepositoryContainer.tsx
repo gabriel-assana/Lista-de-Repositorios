@@ -9,7 +9,7 @@ export default function ReposioryContainer (){
                 <input type="text" placeholder="Type the GitHub username"></input>
                 <button type="submit">Search</button>
             </form>
-            <RepositoryList />
+            <RepositoryList/>
        </> 
     )
 }
