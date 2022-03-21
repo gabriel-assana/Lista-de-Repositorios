@@ -1,7 +1,7 @@
 import './styles/global.scss';
 
-import RepositoryList from './components/RepositoryList';
+import ReposioryContainer from './components/RepositoryContainer';
 
 export function App() {
-    return <RepositoryList/>
+    return <ReposioryContainer/>
 }
