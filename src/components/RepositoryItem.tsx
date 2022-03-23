@@ -15,7 +15,7 @@ function ReposioryItem (props: ReposioryItemProps){
             {/* {props.repostory.name ?? 'Default'} 
                   ?? - siginifica que se o props.repostory.name vim vazio 
                   ele atribui o 'Default' */}
-            <p>props.repository.description</p>
+            <p>{props.repository.description}</p>
             
             <a href={props.repository.html_url}>
                 Acessar repositório

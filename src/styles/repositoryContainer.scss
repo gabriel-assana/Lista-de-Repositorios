@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+body {
+    background-color: rgba(0, 0, 3, 0.952)
+}
+
+.container {
+    margin: 6rem;
+
+    .header-title{
+        color: rgb(184, 181, 181);   
+        font-family: 'Bungee', cursive;
+    }
+
+    .section-search{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0.05));
+        backdrop-filter: blur(16px) saturate(180%);
+        border: 1px solid rgba(255,255,255,0.2);
+        
+        border-radius: 20px; 
+        display: flex;
+        margin-bottom: 2rem;
+        padding: 1rem;
+
+    
+        .form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    }
+
+    
+
+}

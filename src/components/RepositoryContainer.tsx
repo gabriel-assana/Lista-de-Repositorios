@@ -1,3 +1,5 @@
+import '../styles/repositoryContainer.scss';
+
 import { FormEvent, useState } from 'react';
 
 import RepositoryList from './RepositoryList';
@@ -30,17 +32,28 @@ export default function ReposioryContainer (){
 
     return(
        <>
-            <form onSubmit={getUser}>
-                <input type="text" 
-                    placeholder="Qual usuario do GitHub deseja buscar ?"
-                    onChange={(e) => setUser(e.target.value)}
-                    
-                >
-                </input>
-                <button 
-                    type="submit">Pesquisar</button>
-            </form>
-            <RepositoryList repositories={repositories}/>
-       </> 
+        <div className="container">
+                <header className="header-title">
+                    <div>
+                    <h1>Reposiory.Hunter</h1>
+                    </div>
+                </header>
+
+                <section className="section-search">
+                    <form onSubmit={getUser} className="form">
+                        <input 
+                            type="text" 
+                            placeholder="Qual usuario do GitHub deseja buscar ?"
+                            onChange={(e) => setUser(e.target.value)}
+
+                        >
+                        </input>
+                        <button 
+                            type="submit">Pesquisar</button>
+                    </form>
+                </section>
+                <RepositoryList repositories={repositories}/>
+            </div>   
+        </>
     )
 }
