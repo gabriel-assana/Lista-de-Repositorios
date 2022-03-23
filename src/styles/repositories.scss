@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+
 section.repository-list{
     margin: 40px;
 
@@ -6,24 +9,59 @@ section.repository-list{
     }
 
     ul {
+        display: flex;
+        
+        justify-content: space-between;
+        flex-wrap: wrap;
         list-style: none;
         li {
-            & + li {
-                margin-top: 20px;
-            }
-    
-            p {
-                font-size: 14px;
-                color:#444;
-            }
-
+            margin-top: 20px;
+ 
             a {
-                display: inline-block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 margin-top: 16px;
                 text-decoration: none;
-                color: #8257e6
+                color: #07aadb;
+                font-family: 'Bungee', cursive;
+                font-size: 1vw;
             }
         }
+    }
+
+    .card-repository{
+        width: 20vw;
+        height: 20vh;
+
+        background: #434444;
+        box-shadow: 0 1px 10px 0 #016c8d;
+        backdrop-filter: blur( 0.5px );
+        -webkit-backdrop-filter: blur( 0.5px );
+        border-radius: 10px;
+        
+        div{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width: 20vw;
+            font-family: 'Bungee', cursive;
+            font-size: 1vw;
+
+            background-color:#fff;
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 0.5px );
+            -webkit-backdrop-filter: blur( 0.5px );
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+            .icon-git{
+                margin-right: 5px;
+            }
+        }
+
+
     }
 
 }

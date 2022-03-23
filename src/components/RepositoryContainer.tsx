@@ -25,8 +25,9 @@ export default function ReposioryContainer (){
                 .then(response => response.json())
                 .then(data => setRepositories(data))
                 console.log(repositories)
+        }else{
+            alert("Não é possivel realizar uma busca sem o nome do usuario do GitHub")
         }
-        
        
     }
 
@@ -35,7 +36,7 @@ export default function ReposioryContainer (){
         <div className="container">
                 <header className="header-title">
                     <div>
-                    <h1>Reposiory.Hunter</h1>
+                    <h1>Reposiory.Hunter_</h1>
                     </div>
                 </header>
 
@@ -43,13 +44,12 @@ export default function ReposioryContainer (){
                     <form onSubmit={getUser} className="form">
                         <input 
                             type="text" 
-                            placeholder="Qual usuario do GitHub deseja buscar ?"
+                            placeholder="Nome do usuario"
                             onChange={(e) => setUser(e.target.value)}
-
+                            className="input-search"
                         >
                         </input>
-                        <button 
-                            type="submit">Pesquisar</button>
+                        <button type="submit">Pesquisar</button>
                     </form>
                 </section>
                 <RepositoryList repositories={repositories}/>
