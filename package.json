@@ -8,9 +8,11 @@
     "build": "cross-env NODE_ENV=production webpack"
   },
   "dependencies": {
+    "@types/react-toastify": "^4.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
+    "react-toastify": "^8.2.0",
     "sass-loader": "^12.6.0"
   },
   "devDependencies": {
@@ -20,8 +22,8 @@
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
-    "@types/react": "^17.0.39",
-    "@types/react-dom": "^17.0.11",
+    "@types/react": "^17.0.42",
+    "@types/react-dom": "^17.0.14",
     "babel-loader": "^8.2.3",
     "cross-env": "^7.0.3",
     "css-loader": "^6.6.0",

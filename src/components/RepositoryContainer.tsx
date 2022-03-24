@@ -36,7 +36,7 @@ export default function ReposioryContainer (){
         <div className="container">
                 <header className="header-title">
                     <div>
-                    <h1>Reposiory.Hunter_</h1>
+                    <h1>Repository.Hunter_</h1>
                     </div>
                 </header>
 
