@@ -42,4 +42,4 @@ $ git clone https://github.com/gabriel-assana/RepositoryHunter
 $ cd GoRestaurant
 # Abra um novo terminal e execute a aplicação em modo de desenvolvimento
 $ yarn dev
-# O servidor do front-end inciará na porta:8080 - acesse <http://localhost:8080> 
+# O servidor do front-end inciará na porta:8080 - acesse <http://localhost:8080>  
